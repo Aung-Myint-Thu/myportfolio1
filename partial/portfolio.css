@@ -54,6 +54,17 @@ display: block;
     background-color: var(--brand-color);
     cursor: pointer;
 }
+.gehen .text1 .actionBtn1 a{
+    padding: 1rem 3rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: var(--brand-color);
+    cursor: pointer;
+}
 .gehen .text1 .actionBtn1 button:hover{
     background-color: #333;
     color: #fff;
