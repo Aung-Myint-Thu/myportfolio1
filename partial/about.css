@@ -1,0 +1,294 @@
+.about .me{
+    color: var(--brand-color);
+}
+.text1{
+    font-size: var(--secondary-font-size);
+  
+}
+.text1 p {
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.text1 ul {
+    color:#fff;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    transform: skewx(7deg);
+}
+.skill li{
+    list-style-type: none;
+}
+.card{
+    position: relative;
+    width: 35rem;
+    height: 19rem;
+    background-color: #333;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card:hover{
+    height: 45rem;
+}
+.card .line{
+ position: absolute;
+ inset: 0;
+ background-color: #000;
+ overflow: hidden;   
+}
+.card .line::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60rem;
+    height: 12rem;
+    background-color: rgba(113,162,194);
+    animation: animate2 4s linear infinite;
+}
+@keyframes animate2{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+
+    }
+}
+.card .line::after{
+    content: '';
+    position: absolute;
+    inset: 0.3rem;
+    background-color: #292929;
+
+}
+
+.card .imgBx{
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: 15rem;
+    background-color: #000;
+    transition: 0.5s;
+    z-index: 10;
+     overflow: hidden;
+}
+.card:hover .imgBx{
+    width: 25rem;
+    height: 25rem;
+}
+.card .imgBx::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40rem;
+    height: 10rem;
+    background-color: var(--brand-color);
+    animation: animate4 5s linear infinite;
+}
+@keyframes animate4{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);    
+        }
+        100%{
+        transform: translate(-50%,-50%) rotate(360deg);    
+        }
+}
+.card .imgBx::after{
+    content: '';
+    position: absolute;
+    inset: 0.3rem;
+    background-color: #292929;
+
+}
+
+
+.card .imgBx img{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    filter: grayscale(1);
+}
+.card:hover .imgBx img{
+    filter: grayscale(0);
+}
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card .content .detail{
+    padding: 4rem;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(145px);
+    margin-bottom: 2rem;
+
+}
+.card:hover .content .detail{
+    transform: translateY(0px);
+
+}
+.card .content .detail h2{
+    font-size: var(--primary-font-size);
+    font-weight: 600;
+    line-height: 1.2em;
+    color: var(--brand-color);
+
+}
+.card .content .detail h2 span{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #ffffff95;
+}
+.card .content .detail .data{
+    display: flex;
+    justify-content: space-between;
+}
+.card .content .detail .data h3{
+    font-size: 1.8rem;
+    color: var(--brand-color);
+    line-height: 1.2rem;
+    font-weight: 600;
+}
+.card .content .detail .data h3 span{
+    font-size: 1.5rem;
+    color: #fff;
+    padding-top: 2rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+.card .content .detail .actionBtn{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.card .content .detail .actionBtn button{
+    padding: 1rem 3rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--brand-color);
+    cursor: pointer;
+}
+.card .content .detail .actionBtn button:hover{
+    background-color: #333;
+    color: #fff;
+}
+.junior{
+    color: var(--brand-color);
+}
+.skill{
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    border: 1px solid var(--brand-color);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+}
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background-color: #353b48;
+    display: block;
+    height: 2rem;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 3px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+}
+.bar span{
+    height: 2rem;
+    float: left;
+    background-color: #de1a21b7;
+}
+.html{
+    width: 90%;
+    animation: css 8s;
+}
+.javascript{
+    width: 50%;
+    animation: script 8s;
+}
+.react{
+    width: 40%;
+    animation: vue 8s;
+}
+.php{
+    width: 60%;
+    animation: pph 8s;
+}
+.laravel{
+    width: 80%;
+    animation: lara 8s;
+}
+@keyframes css{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes script{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes vue{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes pph{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes lara{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+
+
+

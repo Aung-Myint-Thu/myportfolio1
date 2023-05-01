@@ -1,0 +1,88 @@
+.brand{
+    font-size: 2rem;
+    font-weight: 500;
+    border: 2px solid var(--brand-color);
+    position: relative;
+    padding: 0.5rem;
+    animation: hi 3s infinite;
+}
+@keyframes hi {
+ 0%{left:0px;}
+ 100%{left:50px;}
+}
+nav{
+    background-color: #808080;
+}
+
+.text {
+
+    display: flex;
+    flex-direction: column;
+
+}
+.hello {
+    font-size: 4.5rem;
+    color: var(--brand-color);
+}
+.key{
+    display: inline-flex;
+}
+.frames {
+    font-size: 4rem;
+    color: #fff;
+}
+.name {
+    padding-left: 1.5rem;
+    height:50px;
+    line-height:45px;
+    overflow: hidden;  
+}
+.name li {
+    color: var(--brand-color);
+    font-size: 4rem;
+    position: relative;
+    top:0;
+    animation: move 6s steps(4) infinite;
+}
+@keyframes move {
+    100%{
+        top: -180px;
+    }
+}
+.name li span {
+    position: relative;
+}
+.name li span::after {
+    content: '';
+    position: absolute;
+    left:0;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid firebrick;
+    animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -3.5rem 0 3.5rem;
+    }
+}
+.paragraph{
+    margin-top: 1.5rem;
+}
+.paragraph p {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.profile img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid var(--brand-color);
+    object-fit: cover; 
+}
+.home{
+    border-bottom: 2px solid #000;
+}
