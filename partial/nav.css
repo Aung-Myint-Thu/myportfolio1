@@ -28,7 +28,7 @@ nav{
     display: inline-flex;
 }
 .frames {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #fff;
 }
 .name {
@@ -39,7 +39,7 @@ nav{
 }
 .name li {
     color: var(--brand-color);
-    font-size: 4rem;
+    font-size: 3rem;
     position: relative;
     top:0;
     animation: move 6s steps(4) infinite;
